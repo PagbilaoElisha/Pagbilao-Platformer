@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
 
     void PlayerMovement()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
+        horizontal = Input.GetAxis("Horizontal");
 
         if (Input.GetButtonDown("Jump") && IsGrounded()) // If Button Hit and is player grounded
         {
